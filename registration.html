@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registration - MindForce - < JustImagine > team</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="userList.json"></script>
+        <script src="js/jquery-2.1.4.js"></script>
+        <script src="js/regScript.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="centerize">MindForce Registration</h1>
+        </header>
+        <div class="wrap">
+            <form>
+                <br />
+                <label>Nickname:</label><br />
+                <input type="text" id="InputNick" name="name" placeholder="Enter nickname" maxlength="30" required onchange="CheckNick(this.value)">
+                <br />
+                <label>E-mail:</label><br />
+                <input type="email" id="InputMail" name="email" placeholder="Enter e-mail" maxlength="30" required>
+                <br />
+                <label>Password:</label><br />
+                <input type="password" id="InputPassword" name="password" placeholder="Enter password" maxlength="30" required onchange="CheckPassword1(this.value)">
+                <br />
+                <label>Confirm Password:</label><br />
+                <input type="password" id="ConfirmPassword" name="password" placeholder="Re-enter password" maxlength="30" required onchange="CheckPassword2(this.value)">
+                <br />
+                <br />
+                <input type="button" value="Регистрация" id="Submit" onclick="endRegistration()">
+                <input type="reset"  id="Reset">
+            </form>
+            <input type="button" value="Button"  id="MyButton">
+        </div>
+        
+    </body>
+</html>

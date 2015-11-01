@@ -1,0 +1,195 @@
+body{
+    background: #0099ff;
+    padding:0;
+    margin:0;
+    color:#ffffff;
+    font-family: "Trebuchet MS", Arial, Verdana, serif;
+}
+
+body .wrap{
+    position:absolute;
+    width:100%;
+    height:100%;
+    min-height:380px;
+    min-width:800px;
+}
+
+.wrap .header{
+    background: #0044dd;
+    height: 10%;
+    position:relative;
+    top:0;
+ }
+
+.wrap .mainContent{
+    width:100%;
+    position:relative;
+    height:80%;
+    min-height:380px;
+
+}
+
+.wrap .footer{
+    background: #0044dd;
+    min-height: 10%;
+    width:100%;
+    position:relative;
+    bottom:0;
+}
+
+#MainLogo{
+    display:block;
+    position:relative;
+    top:20%;
+    margin-top:auto;
+    margin-bottom:auto;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#MainLogo:hover{
+    transition:opacity 0.2s ease-in-out;
+    opacity:0.7;
+}
+
+#ChooseSubject{
+    width:100%;
+    height:100%;
+    text-align:center;
+    background:url(img/EDUkraine5.png) top;
+}
+#ChooseSubject h3, #BattleField h3{
+    margin:0;
+    padding:10px;
+}
+
+.Button:hover{
+    transition:opacity 0.2s ease-in-out;
+    opacity:0.7;
+}
+
+#BattleField{
+    background:url(img/EDUkraine7.png) top;
+    height:100%;
+}
+
+#BattleField #PlayerUI, #BattleLogUI, #RobotUI{
+    margin:5px;
+    padding:5px;
+    border: 1px solid #ffffff;
+    float:left;
+    background-color:#0044dd;
+}
+
+#BattleField #PlayerUI{
+    width:210px;
+}
+
+#BattleField #BattleLogUI{
+    width:270px;
+}
+#BattleField #BattleLog{
+    max-height:250px;
+    overflow-y: scroll;
+}
+
+#BattleLogUI p{
+    color:#ffffff;
+}
+
+#BattleLogUI #BattleLog p{
+    background:#0099ff;
+    border:1px dashed #ffffff;
+}
+
+#BattleLogUI #BattleLog p:nth-last-child(2n){
+    background:#0044dd;
+    border:1px dashed #ffffff;
+}
+
+#BattleLogUI .TimerWrap{
+    background-color: #005588;
+    border: 1px solid #ffffff;
+	width:150px;
+	height:15px;
+}
+#BattleLogUI .Timer{
+	background-color: #0099ff;
+	width:150px;
+	height:15px;
+}
+
+#BattleLogUI .Timer:active{
+    transition:width 10.0s ease-in-out;
+    width:0px;
+}
+	
+
+#BattleField #RobotUI {
+    width:210px;
+}
+
+#BattleField .MindForceBar{
+    width:200px;
+    height:18px;
+    margin:5px;
+    background-color: #005588;
+    border: 1px solid #ffffff;
+}
+
+#BattleField .MindForceBar .CurrMindForce{
+    width: 0px;
+    height:18px;
+    background-color: #0099ff;
+}
+
+#BattleField .MindForceBar p{
+    position:relative;
+    top:-35px;
+}
+
+a{
+    color:#ffffff;
+}
+
+a:hover{
+    color: #77bbff;
+}
+
+.centerize{
+    position:relative;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    max-width:760px;
+}
+
+#BattleResultWindow{
+    background-color: #0099ff;
+    border: 2px solid #ffffff;
+    width:400px;
+    min-height:200px;
+    position:fixed;
+    padding:20px;
+}
+
+.BottomButton{
+    background-color: #ffffff;
+    border:1px solid #005588;
+    color: #0099ff;
+    width:100px;
+    height:20px;
+    border-radius:10px 10px 10px 10px;
+    position:absolute;
+    bottom:20px;
+ }
+
+.BottomButton:hover{
+    box-shadow: 0px 0px 16px 0px rgba(119, 187, 255, 0.8);
+}
+

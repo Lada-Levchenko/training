@@ -1,0 +1,360 @@
+body{
+	background: url(img/SideBackgrLeft.png) repeat-y top left, url(img/SideBackgrRight.png) repeat-y top right, url(img/top-backgr.png) no-repeat top;
+	font-family: "Trebuchet MS", Verdana, Georgia;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:20px;
+
+}
+
+
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+.leftSide{
+	width:200px;
+	padding:3px;
+	float:left;
+	
+}
+
+.block{
+	margin-bottom:15px;
+	border:2px solid #0099ff;
+	min-height:150px;
+	background-color:#ffffff;
+	
+	border-radius:30px 30px 30px 30px;
+	-moz-border-radius:30px 30px 30px 30px;
+	-webkit-border-top-left-radius: 30px; 
+	-webkit-border-top-right-radius: 30px; 
+	-webkit-border-bottom-right-radius: 30px; 
+	-webkit-border-bottom-left-radius: 30px;
+
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+	-moz-box-shadow:    0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+	box-shadow:         0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+}
+
+.block header, .mainContent>header{
+	border:1px solid #0099ff;
+	text-align:center;
+	background-color:#0099ff;
+
+	
+	border-radius:26px 26px 0px 0px;
+	-moz-border-radius:26px 26px 0px 0px;
+	-webkit-border-top-left-radius: 26px; 
+	-webkit-border-top-right-radius: 26px; 
+	-webkit-border-bottom-right-radius: 0px; 
+	-webkit-border-bottom-left-radius: 0px;
+
+}
+
+header{
+	width:100%;
+	text-align:center;
+}
+.wrap>header>a>img{
+	width:100%;
+	max-width:900px;
+	border:0 solid #ffffff;
+}
+
+body>a>aside{
+	width:100px;
+	height:100%;
+	position:fixed;
+	left:0px;
+	top:0px;
+	background:url(img/UpArrow.png) no-repeat top;
+	background-color:rgba(255,255,255,0.7);
+	transition: background-color 0.5s ease-in-out;
+	background-color:rgba(255,255,255,0);
+}
+
+body>a>aside:hover{
+	transition: background-color 0.5s ease-in-out;
+	background-color:rgba(255,255,255,0.7);
+}
+
+footer{
+	float:left;
+	height:100px;
+	text-align:right;
+	background-color:#0099ff;
+	padding-top:20px;
+	padding-right:30px;
+	margin-top:20px;
+	margin-bottom:10px;
+	width:100%;
+	
+	border:2px solid #ffffff;
+	
+	border-radius:0px 0px 30px 30px;
+	-moz-border-radius:0px 0px 30px 30px;
+	-webkit-border-top-left-radius: 0px; 
+	-webkit-border-top-right-radius: 0px; 
+	-webkit-border-bottom-right-radius: 30px; 
+	-webkit-border-bottom-left-radius: 30px;
+
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+	-moz-box-shadow:    0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+	box-shadow:         0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+}
+
+.mainContent{
+	margin-left:230px;
+	background-color:#ffffff;
+	
+	border:2px solid #0099ff;
+	
+	border-radius:30px 30px 0px 0px;
+	-moz-border-radius:30px 30px 0px 0px;
+	-webkit-border-top-left-radius: 30px; 
+	-webkit-border-top-right-radius: 30px; 
+	-webkit-border-bottom-right-radius: 0px; 
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+	-moz-box-shadow:    0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+	box-shadow:         0px 0px 16px 0px rgba(0, 142, 255, 0.8);
+}
+
+.mainContent>.ContentWrap>img, .centerize img{
+	max-width:600px;
+}
+.mainContent>.ContentWrap>img.large{
+	width:200px;
+}
+
+.centerize{
+	text-align:center;
+}
+
+article aside img{
+	width:200px;
+}
+
+
+
+article>aside:hover img.large, #RandImgBlock:hover #RandImg{
+	position:fixed;
+	left:0;
+    right:0;
+	top:0;
+    bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+	margin-top:auto;
+    margin-bottom:auto;
+	transition:width 0.2s ease-in-out;
+	width:700px;	
+}
+
+
+
+#RandImg{
+	width:180px;
+	padding:9px;
+}
+
+article{
+	border:1px dashed #0099ff;
+	margin:10px;
+	padding:10px;
+	min-height:155px;
+}
+
+article aside{
+	float:left;
+	width: 200px;
+	min-height:130px;
+	margin-right:10px;
+}
+
+article aside:nth-child(2n){
+	float:right;
+}
+
+article aside:first-child + aside{
+	float:right;
+}
+
+h4{
+	color:#0099ff;
+	text-align:center;
+}
+article p{
+	margin:10px;
+}
+
+article .date{
+	color:#0099ff;
+	text-align:right;
+	font-size:14px;;
+}
+article.toosmall{
+	min-height:300px;
+}
+
+aside.toosmall{
+	min-height:250px;
+}
+
+.wrap{
+    width:300px;
+    position:relative;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+table{
+    width:100%;
+    border:2px solid #0099ff;
+}
+td{
+    border:1px solid #0099ff;
+    text-align:center;
+    height:30px;
+}
+
+
+.ContentWrap{
+	padding:20px;
+	padding-top:10px;
+}
+
+p{
+	text-indent:15px;
+	margin:5px;
+}
+
+a:visited{
+	color:#999999;
+}
+a{
+	color:#0099FF;
+	border:0 solid #ffffff;
+}
+
+a:active{
+	color:#CCCCCC;
+}
+
+a:hover{
+	color:#4455FF;
+}
+
+a.importantLink{
+	display:block;
+	background-color:#ffffff;
+	border:1px solid #0099ff;
+	width:250px;
+	text-align:center;
+	height:20px;
+}
+
+a.importantLink:hover{
+	background-color:#ccccff;
+}
+
+nav ul{
+	position:relative;
+	list-style:none;
+	list-style:none;
+	margin:15px;
+	padding:0px;
+}
+
+
+
+nav li{
+	display:block;
+	height:40px;
+	position:relative;
+	background-color:#ffffff;
+	min-width:100px;
+	text-align:center;
+
+}
+
+
+
+nav li ul{
+    position:absolute;
+    padding:0;
+    margin:0; 
+    list-style:none;
+    top:0px;    
+    min-width:150px;	
+    border:1px solid #0099ff;
+    
+    transition:opacity 0.5s ease-in-out, z-index 0.5s ease-in-out, left 0.8s ease-in-out;
+    -moz-opacity: 0;
+    opacity:0;
+    filter: alpha(opacity=0);
+    z-index:-1;	
+    left:140px; 	
+}
+
+nav li:hover ul{
+    z-index:10;
+    transition:left 0.8s ease-in-out, opacity 0.5s ease-in-out;
+    left:160px;
+    -moz-opacity: 0.90;
+    opacity:.90;
+    filter: alpha(opacity=90);
+}
+
+
+nav li:hover{
+	background-color:#ccccff;
+}
+
+
+nav a:visited{
+	color:#0099FF;
+}
+
+nav a{
+	display:block;
+	color:#0099FF;
+	width:100%;
+	height:100%;
+	padding-top:10px;
+}
+
+nav a:active{
+	color:#CCCCCC;
+}
+
+nav a:hover{
+	color:#4455FF;
+}
+
+form{
+    text-align:center;
+}
+
+form textarea{
+	width:100%;
+	height:200px;
+	overflow:auto;
+       
+}
+
+input#Submit, input#Reset, input#File input:hover{
+	background-color:#ffffff;
+	border:1px solid #0099ff;
+}
+
+input#Submit:hover, input#Reset:hover, input#File input:hover{
+	background-color:#ccccff;
+}
+
+input#Submit:active, input#Reset:active, input#File:active{
+	background-color:#0099ff;
+}

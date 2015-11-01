@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta  charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MindForce - < JustImagine > team</title>
+    <script src="jquery-2.1.4.js"></script>
+    <script src="MainScript.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header"></div>
+        <div class="mainContent" id="MainContent">
+            <img src="img/MindForce.png" id="MainLogo" alt="Logo MindForce" onclick="StartGame()"/>
+
+            <div id="ChooseSubject">
+                <h3>Выбери предмет для своих умений:</h3>
+                <img src="img/Subjects/MathLogo.png" alt="Math" onclick="ChooseSubject('Math')" class="Subject Button" />
+                <img src="img/Subjects/EnglishLogo.png" alt="English" onclick="ChooseSubject('English')" class="Subject Button" />
+                <img src="img/Subjects/BiologyLogo.png" alt="Biology" onclick="ChooseSubject('Biology')" class="Subject Button" />
+            </div>
+
+            <div id="BattleField">
+                <div class="centerize">
+                    <h3>Победи робота, используя свои умения</h3>
+                    <div id="PlayerUI">
+                        <h4 class="NickName">Player</h4>      
+                        <img src="img/TempPlayer.png" width="200" alt="Player" class="Avatar" />
+                        <div class="StatusBar">
+                            <div class="MindForceBar">
+                                <div class="CurrMindForce"></div>
+                                <p>100 / 100</p>
+                            </div>
+                        </div>
+                        <div class="SkillBar">
+                            <img src="img/simg.png" alt="Skill 1" id="Skill1" class="Skill Button" onclick="UseSkill(Player.ActiveSkills[0])" />
+                            <img src="img/simg.png" alt="Skill 2" id="Skill2" class="Skill Button" onclick="UseSkill(Player.ActiveSkills[1])" />
+                            <img src="img/simg.png" alt="Skill 3" id="Skill3" class="Skill Button" onclick="UseSkill(Player.ActiveSkills[2])" />
+                            <br /><a onclick="ExpressWin()">Express Win</a>
+                        </div>
+                    </div>
+                    <div id="BattleLogUI">
+                        <h4>Ход игры</h4>
+                        <p id="pTurn"></p>
+						<div class="TimerWrap centerize">
+							<div class="Timer"></div>
+						</div>
+                        <div id="BattleLog">
+                            <p id="startOfHistory">Start!</p>
+                        </div>
+                        <a href="#startOfHistory">Перейти к началу истории</a>
+                    </div>
+                    <div id="RobotUI">
+                        <h4 class="NickName">Robot</h4>      
+                        <img src="img/img.png" width="200" alt="Robot" class="Avatar" />
+                        <div class="StatusBar">
+                            <div class="MindForceBar">
+                                <div class="CurrMindForce"></div>
+                                <p>100 / 100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="BattleResultWindow" class="centerize">
+						<p></p>
+                        <div class="BottomButton" onclick="ExitBattle()">Уйти</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
